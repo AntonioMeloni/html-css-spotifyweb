@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside, header, main {
+    font-family: 'Lato', sans-serif;
+}
+
+aside {
+    background-color: #040404;
+    width:230px;
+    height: 100vh;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+header {
+    background-color: #0C0C0C;
+}
+
+main {
+    background-color: #121212;
+    padding: 50px 0 0 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    margin: 20px 20px;
+}
+
+.menu a{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    padding-left: 8px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.menu i{
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.menu li{
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s;
+    padding: 10px;
+    list-style: none;
+}
+.menu li:first-child {
+    background-color: #282828;
+    border-radius: 5px;
+    color: white;
+}
+
+.menu li:first-child a{
+    color: white;
+}
+
+.menu li:hover a{
+    color: white;
+}
+
+.playlist{
+    margin-left: 20px;
+}
+
+.playlist h3{
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: lighter;
+    color: white;
+}
+.playlist li{
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.playlist li a{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 900;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.playlist li:hover a{
+    color: white;
+}
+
+.new-playlist{
+    width: 35px;
+    height: 35px;
+    background-color: lightgrey;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.new-playlist p{
+    text-align: center;
+    line-height: 35px;
+    font-size: 28px;
+    color: black;
+}
+
+.favorite{
+    width: 35px;
+    height: 35px;
+    background-image: linear-gradient(to bottom right, #5230F3, white);
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.favorite p{
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: white;
+}
+
+header {
+    width: calc(100vw - 230px);
+    height: 60px;
+}
+
+main {
+    width: calc(100vw - 230px);
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
