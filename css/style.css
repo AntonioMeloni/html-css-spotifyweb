@@ -451,4 +451,8 @@ nav li:hover hr{
     .music-player i{
         padding: 5px;
     }
+
+    .recently, .made-for{
+        padding: 20px 20px;
+    }
 }
