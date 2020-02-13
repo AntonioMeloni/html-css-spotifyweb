@@ -48,6 +48,10 @@ main {
     margin: 20px 20px;
 }
 
+.logo .logo-xs{
+    display: none;
+}
+
 .menu a{
     font-size: 13px;
     color: rgba(255, 255, 255, 0.7);
@@ -59,7 +63,8 @@ main {
 
 .menu i{
     font-size: 25px;
-    padding-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .menu li{
@@ -349,7 +354,7 @@ nav li:hover hr{
 }
 
 .song-commands{
-    width: 40%;
+    width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,4 +400,47 @@ nav li:hover hr{
 
 .time i{
     padding: 0;
+}
+
+@media screen and (max-width:768px) {
+    aside{
+        width: 80px;
+    }
+
+    main {
+        width: calc(100vw - 80px);
+    }
+
+    header {
+        width: calc(100vw - 80px);
+    }
+
+    .logo .logo-lg{
+        display: none;
+    }
+
+    .logo .logo-xs{
+        display: block;
+    }
+
+    .menu li a{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .bottom-sidebar{
+        display: none;
+    }
+
+    .music-player{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .music-player i{
+        padding: 5px;
+    }
 }
